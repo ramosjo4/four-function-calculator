@@ -13,9 +13,24 @@ fun main (args: Array<String>){
    val num1 = readLine()!!.toDouble()
    val num2 = readLine()!!.toDouble()
    val operand = readLine()!!.toString()
+   var result: Double
 
-    println(num1 + "\n " + num2 + " \n" + operand)
 
+    if (operand == "+"){
+        result = num1+ num2
+        println(result)
+    }else if(operand == "-"){
+        result = num1 - num2
+        println(result)
+    }else if(operand == "*"){
+        result = num1 * num2
+        println(result)
+    }else if(operand== "/"){
+        result = num1 / num2
+        println(result)
+    }else {
+        println("error")
+    }
 
 
 
