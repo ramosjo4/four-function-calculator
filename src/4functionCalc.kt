@@ -6,6 +6,23 @@ Jose Ramos
 A simple four function calculator that will take in two numbers and an operand and
 output the outcome.
  */
+fun sum (num1: Double, num2: Double): Double {
+    var result = num1 + num2
+    return result
+}
+fun difference (num1: Double, num2: Double): Double {
+    var result = num1 - num2
+    return result
+}
+fun product (num1: Double, num2: Double): Double {
+    var result = num1 * num2
+    return result
+}
+fun quotient (num1: Double, num2: Double): Double {
+    var result = num1 / num2
+    return result
+}
+
 fun main (args: Array<String>){
 
     println("enter the two numbers followed by the operator which you wish to use.")
@@ -17,16 +34,16 @@ fun main (args: Array<String>){
 
 
     if (operand == "+"){
-        result = num1+ num2
+        result = sum(num1,num2)
         println(result)
     }else if(operand == "-"){
-        result = num1 - num2
+        result = difference(num1,num2)
         println(result)
     }else if(operand == "*"){
-        result = num1 * num2
+        result = product(num1,num2)
         println(result)
     }else if(operand== "/"){
-        result = num1 / num2
+        result = quotient(num1,num2)
         println(result)
     }else {
         println("error")
